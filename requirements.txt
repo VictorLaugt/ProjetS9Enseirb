@@ -1,0 +1,7 @@
+scipy
+tulip-python==5.7.2
+networkx
+matplotlib
+s-gd2
+tqdm
+numpy==1.26.4 #must be last, no overwrite wanted
