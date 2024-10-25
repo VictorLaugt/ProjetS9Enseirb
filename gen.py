@@ -1,10 +1,10 @@
 import graph_processing as gp
 import os, glob, sys
-import s_gd2
-from tqdm import tqdm
+import s_gd2  # graph drawing algorithm
+from tqdm import tqdm  # progress bar
 
 def sgd2_layout(tlp_graph, seed):
-    AM = gp.tlp2AM(tlp_graph)        
+    AM = gp.tlp2AM(tlp_graph)
     I, J = gp.AM2edgesIdx(AM)
     I = I.astype("int32")
     J = J.astype("int32")

@@ -1,0 +1,22 @@
+s_gd2.layout(I, J, random_seed=None, init=None)
+Calcule le positionement des noeuds d'un graphe avec l'algorithme SGD2
+
+Arguments
+---------
+I: int32 (n,)-array
+J: int32 (n,)-array
+Tableaux décrivant les arrêtes du graphe.
+L'ensemble des arrêtes du graphe est l'ensemble les couples {(I[k], J[k]) pour 0 <= k < n}.
+
+random_seed: int (optional)
+Graine pour initialiser le positionement aléatoire des noeuds du graphe.
+
+init: float64 (n, 2)-array (optional)
+Positions initiales des noeuds du graphe.
+
+Si l'argument init est fourni, alors l'argument random_seed est ignoré.
+
+Returns
+-------
+X: float64 (n, 2) array
+
